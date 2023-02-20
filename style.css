@@ -126,8 +126,9 @@ body::before{
     margin-top: 1em ;
     padding-left: 0;
     margin-left: 0;
-    
+    transition: .3s ease;
 }
+
 .collapse{
     display: none;
 }
@@ -146,7 +147,7 @@ body::before{
 }
 
 .nav-item a:hover{
-    color: var(--primary-color) !important
+    color: var(--primary-color) !important;
 }
 .btn-orange{
     background-color:var(--primary-color);
