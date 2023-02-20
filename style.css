@@ -284,6 +284,7 @@ body::before{
   
     .hero-container .right{
         display: block;
+        margin-top: 20px;
     }
     .hero-container .title{
         margin-bottom: .2em;
@@ -320,21 +321,7 @@ body::before{
         width: 80%;
         margin-inline:auto;
     }
-    
 
-}
-/* Media lg 992px */
-@media screen and (min-width:992px) {
-    .hero-container{
-        padding-bottom:20px;
-    }
-    .hero-container .title{
-        margin-bottom: .2em;
-        font-size: 4rem;
-    }
-    .service__description{
-        font-size: 1rem;
-    }
     .section-d-lg-flex{
         display: flex;
     }
@@ -399,6 +386,85 @@ body::before{
      .marketing-section .showcase-img img{
         width: 400px;
     }
+    
+
+}
+/* Media lg 992px */
+@media screen and (min-width:992px) {
+    .hero-container{
+        padding-bottom:20px;
+    }
+    .hero-container .title{
+        margin-bottom: .2em;
+        font-size: 4rem;
+    }
+    .service__description{
+        font-size: 1rem;
+    }
+    /* .section-d-lg-flex{
+        display: flex;
+    }
+    .section-justify-content-between{
+        justify-content: space-between;
+    }
+    .section-justify-content-around{
+        justify-content: space-around;
+    }
+    .section-align-center{
+        align-items: center;
+    }
+    .section-flex-reverse{
+        flex-direction: row-reverse;
+    }
+    .section-gap-20{
+        gap: 20px;
+    }
+    /* react section */
+    .react-section .w-lg-100{
+       width: 100%;
+
+    }
+    .react-section .content-title{
+        text-align: left;
+        font-size: 4rem;
+    }
+    .react-section .content-description{
+        text-align: left;
+        max-width: 90%;
+    }
+    .react-section .section-lg-p2{
+        padding: 40px;
+    }
+    .react-section .showcase-img img{
+        width: 400px;
+    } */
+
+    /* marketing */
+
+    
+
+    /* .marketing-section .w-lg-100{
+        width: 100%;
+     }
+     .marketing-section .content{
+        width: 60%;
+     }
+     .marketing-section .content-title{
+         text-align: right;
+         font-size: 4rem;
+     }
+     .marketing-section .content-description{
+         text-align: right;
+     }
+     .marketing-section .section-lg-p2{
+         padding: 40px;
+     }
+     .marketing-section .showcase-img img{
+        width: 500px;
+     }
+     .marketing-section .showcase-img img{
+        width: 400px;
+    } */
     
     
 }
