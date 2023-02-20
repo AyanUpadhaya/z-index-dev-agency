@@ -2,6 +2,14 @@
 /* Media md */
 
 @media screen and (min-width:768px) {
+    /* utils */
+    .m-md-inline{
+        margin:2em;
+    }
+    .w-100{
+        width: 100% !important;
+    }
+    /* hamburger */
     .hamburger{
         display: none;
     }
@@ -32,6 +40,7 @@
         display: flex;
         justify-content: space-between;
         gap:20px;
+        height: 80vh;
     }
     .hero-container .left{
         width: 100%;
@@ -69,11 +78,12 @@
         background-color: #faf5e1;
         box-shadow: -3px 3px 5px var(--color-teal);
         width: 400px;
-        height: 400px;
+        height: 450px;
         border-radius: 5px;
+        /* padding: 10px; */
     }
     .service__title{
-        margin-bottom: 1em;
+        margin-bottom: .3em;
     }
     .service__description{
         font-size: .8rem;
@@ -83,7 +93,81 @@
         height: 180px;
     }
 
+    .container-md{
+        width: 80%;
+        margin-inline:auto;
+    }
+    
+
 }
+/* Media lg 992px */
+@media screen and (min-width:992px) {
+    .service__description{
+        font-size: 1rem;
+    }
+    .section-d-lg-flex{
+        display: flex;
+    }
+    .section-justify-content-between{
+        justify-content: space-between;
+    }
+    .section-justify-content-around{
+        justify-content: space-around;
+    }
+    .section-align-center{
+        align-items: center;
+    }
+    .section-flex-reverse{
+        flex-direction: row-reverse;
+    }
+    .section-gap-20{
+        gap: 20px;
+    }
+    /* react section */
+    .react-section .w-lg-100{
+       width: 100%;
+
+    }
+    .react-section .content-title{
+        text-align: left;
+        font-size: 4rem;
+    }
+    .react-section .content-description{
+        text-align: left;
+        max-width: 90%;
+    }
+    .react-section .section-lg-p2{
+        padding: 40px;
+    }
+
+    /* marketing */
+
+    
+
+    .marketing-section .w-lg-100{
+        width: 100%;
+     }
+     .marketing-section .content{
+        width: 60%;
+     }
+     .marketing-section .content-title{
+         text-align: right;
+         font-size: 4rem;
+     }
+     .marketing-section .content-description{
+         text-align: right;
+     }
+     .marketing-section .section-lg-p2{
+         padding: 40px;
+     }
+     .marketing-section .showcase-img img{
+        width: 500px;
+     }
+    
+    
+}
+
+
 /* Media xlg */
 @media screen and (min-width:1200px) {
     .hero-container .right{
