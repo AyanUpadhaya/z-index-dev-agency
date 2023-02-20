@@ -24,6 +24,11 @@ body::before{
 .container-fluid{
     width: 100%;
 }
+.container{
+    width: 80%;
+    margin-inline:auto;
+}
+
 .img-fluid{
     width: 100%;
 }
@@ -32,6 +37,11 @@ body::before{
     margin: auto;
     
 }
+.section-p1{
+    padding: 20px;
+}
+
+
 .text-center{
     text-align: center;
 }
@@ -48,8 +58,20 @@ body::before{
     margin-top: 25px;
     margin-bottom: 25px;
 }
+/* react-section */
+.bg-dark{
+    background-color: #111827;
+    color:var(--neutral-color);
+}
+.bg-teal{
+    background-color: var(--color-teal);
+    color:var(--neutral-color);
+}
 
-
+.react-section{
+    position: relative;
+    bottom: 10px;
+}
 /* navbar */
 
 .nav{
@@ -258,11 +280,12 @@ body::before{
         background-color: #faf5e1;
         box-shadow: -3px 3px 5px var(--color-teal);
         width: 400px;
-        height: 400px;
+        height: 450px;
         border-radius: 5px;
+        /* padding: 10px; */
     }
     .service__title{
-        margin-bottom: 1em;
+        margin-bottom: .3em;
     }
     .service__description{
         font-size: .8rem;
@@ -272,7 +295,44 @@ body::before{
         height: 180px;
     }
 
+    .container-md{
+        width: 80%;
+        margin-inline:auto;
+    }
+    .section-d-md-flex{
+        display: flex;
+    }
+    .section-justify-content-between{
+        justify-content: space-between;
+    }
+    .section-align-center{
+        align-items: center;
+    }
+
+    .react-section .content-title{
+        text-align: left;
+        font-size: 4rem;
+    }
+    .react-section .content-description{
+        text-align: left;
+        max-width: 75%;
+    }
+    .section-p2{
+        padding: 40px;
+    }
+
 }
+/* Media lg 992px */
+@media screen and (min-width:992px) {
+    .service__description{
+        font-size: 1rem;
+    }
+    
+}
+
+
+
+
 /* Media xlg */
 @media screen and (min-width:1200px) {
     .hero-container .right{
