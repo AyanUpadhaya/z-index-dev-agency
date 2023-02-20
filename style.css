@@ -59,7 +59,7 @@ body::before{
     margin-top: 25px;
     margin-bottom: 25px;
 }
-/* react-section */
+
 .bg-dark{
     background-color: #111827;
     color:var(--neutral-color);
@@ -74,6 +74,7 @@ body::before{
     color:var(--neutral-color);
 }
 
+/* --------------MOBILE DESIGN---------------------- */
 
 /* navbar */
 
@@ -211,17 +212,17 @@ body::before{
 /* react section */
 
 .react-section .showcase-img img{
-    width: 50%;
+    width: 70%;
 }
 /* marketing  */
 .marketing-section{
     background-color: var(--neutral-color);
 }
 .marketing-section .showcase-img img{
-    width: 50%;
+    width: 70%;
 }
 
-/* Media md */
+/*----------- MEDIA MD------------------- */
 
 @media screen and (min-width:768px) {
     /* utils */
@@ -263,7 +264,7 @@ body::before{
         justify-content: space-between;
         align-items: center;
         gap:20px;
-        height: 80vh;
+        height: 50vh;
     }
     .hero-container .left{
         width: 100%;
@@ -282,10 +283,7 @@ body::before{
         color: #222;
     }
   
-    .hero-container .right{
-        display: block;
-        margin-top: 20px;
-    }
+    
     .hero-container .title{
         margin-bottom: .2em;
         font-size: 3rem;
@@ -304,7 +302,6 @@ body::before{
         width: 400px;
         height: 450px;
         border-radius: 5px;
-        /* padding: 10px; */
     }
     .service__title{
         margin-bottom: .3em;
@@ -362,8 +359,6 @@ body::before{
 
     /* marketing */
 
-    
-
     .marketing-section .w-lg-100{
         width: 100%;
      }
@@ -389,10 +384,23 @@ body::before{
     
 
 }
-/* Media lg 992px */
+/* MEDIA LARGE 992px */
 @media screen and (min-width:992px) {
     .hero-container{
         padding-bottom:20px;
+        height: 100vh;
+    }
+    .hero-container .left{
+        width: 50%;
+        display: block;
+        text-align: left;
+    }
+    .hero-container .right{
+        display: block;
+        width: 50%;
+    }
+    .hero-container .right img{
+        margin-top: 20px;
     }
     .hero-container .title{
         margin-bottom: .2em;
@@ -401,90 +409,15 @@ body::before{
     .service__description{
         font-size: 1rem;
     }
-    /* .section-d-lg-flex{
-        display: flex;
-    }
-    .section-justify-content-between{
-        justify-content: space-between;
-    }
-    .section-justify-content-around{
-        justify-content: space-around;
-    }
-    .section-align-center{
-        align-items: center;
-    }
-    .section-flex-reverse{
-        flex-direction: row-reverse;
-    }
-    .section-gap-20{
-        gap: 20px;
-    }
-    /* react section */
-    .react-section .w-lg-100{
-       width: 100%;
-
-    }
-    .react-section .content-title{
-        text-align: left;
-        font-size: 4rem;
-    }
-    .react-section .content-description{
-        text-align: left;
-        max-width: 90%;
-    }
-    .react-section .section-lg-p2{
-        padding: 40px;
-    }
-    .react-section .showcase-img img{
-        width: 400px;
-    } */
-
-    /* marketing */
-
-    
-
-    /* .marketing-section .w-lg-100{
-        width: 100%;
-     }
-     .marketing-section .content{
-        width: 60%;
-     }
-     .marketing-section .content-title{
-         text-align: right;
-         font-size: 4rem;
-     }
-     .marketing-section .content-description{
-         text-align: right;
-     }
-     .marketing-section .section-lg-p2{
-         padding: 40px;
-     }
-     .marketing-section .showcase-img img{
-        width: 500px;
-     }
-     .marketing-section .showcase-img img{
-        width: 400px;
-    } */
-    
     
 }
 
 
-
-
-/* Media xlg */
-@media screen and (min-width:1200px) {
-    .hero-container .right{
-        width: 50%;
-        display: block;
-    }
+/* MEDIA  EXTRA LARGE */
+@media screen and (min-width:1040px) {
+ 
     .hero-container .right img{
         height: 100%;
-    }
-    .hero-container .left{
-        width: 50%;
-        display: block;
-        text-align: left;
     }
     .service__description{
         font-size: 1rem;

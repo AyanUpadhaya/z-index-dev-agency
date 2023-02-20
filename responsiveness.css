@@ -1,5 +1,5 @@
 
-/* Media md */
+/*----------- MEDIA MD------------------- */
 
 @media screen and (min-width:768px) {
     /* utils */
@@ -41,7 +41,7 @@
         justify-content: space-between;
         align-items: center;
         gap:20px;
-        height: 80vh;
+        height: 50vh;
     }
     .hero-container .left{
         width: 100%;
@@ -60,9 +60,7 @@
         color: #222;
     }
   
-    .hero-container .right{
-        display: block;
-    }
+    
     .hero-container .title{
         margin-bottom: .2em;
         font-size: 3rem;
@@ -81,7 +79,6 @@
         width: 400px;
         height: 450px;
         border-radius: 5px;
-        /* padding: 10px; */
     }
     .service__title{
         margin-bottom: .3em;
@@ -98,21 +95,7 @@
         width: 80%;
         margin-inline:auto;
     }
-    
 
-}
-/* Media lg 992px */
-@media screen and (min-width:992px) {
-    .hero-container{
-        padding-bottom:20px;
-    }
-    .hero-container .title{
-        margin-bottom: .2em;
-        font-size: 4rem;
-    }
-    .service__description{
-        font-size: 1rem;
-    }
     .section-d-lg-flex{
         display: flex;
     }
@@ -153,8 +136,6 @@
 
     /* marketing */
 
-    
-
     .marketing-section .w-lg-100{
         width: 100%;
      }
@@ -178,25 +159,42 @@
         width: 400px;
     }
     
-    
+
 }
-
-
-
-
-/* Media xlg */
-@media screen and (min-width:1200px) {
-    .hero-container .right{
-        width: 50%;
-        display: block;
-    }
-    .hero-container .right img{
-        height: 100%;
+/* MEDIA LARGE 992px */
+@media screen and (min-width:992px) {
+    .hero-container{
+        padding-bottom:20px;
+        height: 100vh;
     }
     .hero-container .left{
         width: 50%;
         display: block;
         text-align: left;
+    }
+    .hero-container .right{
+        display: block;
+        width: 50%;
+    }
+    .hero-container .right img{
+        margin-top: 20px;
+    }
+    .hero-container .title{
+        margin-bottom: .2em;
+        font-size: 4rem;
+    }
+    .service__description{
+        font-size: 1rem;
+    }
+    
+}
+
+
+/* MEDIA  EXTRA LARGE */
+@media screen and (min-width:1040px) {
+ 
+    .hero-container .right img{
+        height: 100%;
     }
     .service__description{
         font-size: 1rem;
