@@ -152,7 +152,7 @@ body::before{
 .hero-container{
     background-color:var(--color-teal);
     margin-bottom: 0;
-    height: 75vh;
+    overflow: hidden;
 }
 .hero-container .title{
     text-transform: uppercase;
@@ -206,14 +206,14 @@ body::before{
 /* react section */
 
 .react-section .showcase-img img{
-    width: 400px;
+    width: 50%;
 }
 /* marketing  */
 .marketing-section{
     background-color: var(--neutral-color);
 }
 .marketing-section .showcase-img img{
-    width: 400px;
+    width: 50%;
 }
 
 /* Media md */
@@ -256,6 +256,7 @@ body::before{
     .hero-container{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         gap:20px;
         height: 80vh;
     }
@@ -277,11 +278,11 @@ body::before{
     }
   
     .hero-container .right{
-        display: none;
+        display: block;
     }
     .hero-container .title{
-        margin-bottom: .5em;
-        font-size: 5rem;
+        margin-bottom: .2em;
+        font-size: 3rem;
     }
     /* services */
     .services{
@@ -319,6 +320,13 @@ body::before{
 }
 /* Media lg 992px */
 @media screen and (min-width:992px) {
+    .hero-container{
+        padding-bottom:20px;
+    }
+    .hero-container .title{
+        margin-bottom: .2em;
+        font-size: 4rem;
+    }
     .service__description{
         font-size: 1rem;
     }
@@ -356,6 +364,9 @@ body::before{
     .react-section .section-lg-p2{
         padding: 40px;
     }
+    .react-section .showcase-img img{
+        width: 400px;
+    }
 
     /* marketing */
 
@@ -380,6 +391,9 @@ body::before{
      .marketing-section .showcase-img img{
         width: 500px;
      }
+     .marketing-section .showcase-img img{
+        width: 400px;
+    }
     
     
 }
