@@ -53,11 +53,21 @@ body::before{
 }
 
 .lead{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 .my-5{
     margin-top: 25px;
     margin-bottom: 25px;
+}
+.p-5{
+    padding:25px;
+}
+.py-5{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.text-light{
+    color:var(--neutral-color);
 }
 
 .bg-dark{
@@ -72,6 +82,13 @@ body::before{
 .bg-teal{
     background-color: var(--color-teal);
     color:var(--neutral-color);
+}
+
+.fill{
+    color: #fbbf24;
+}
+.unfill{
+    color: #faf5e1;
 }
 
 /* --------------MOBILE DESIGN---------------------- */
@@ -223,6 +240,48 @@ body::before{
     width: 70%;
 }
 
+/* testimonial */
+.testimonial{
+    background-color: #033e52;
+}
+.testimonial .grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:1.5rem;
+}
+.grid-item{
+    border: 1px solid #fff;
+}
+.grid-item .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--neutral-color);
+}
+.grid-item .card .card_title{
+    margin-bottom: .5em;
+    font-size: 1.5rem;
+    color:#222222;
+}
+.grid-item .card .designation{
+    font-weight: bold;
+    color:#248b84;
+}
+.grid-item .card_img_top{
+    border-radius: 100%;
+    border:5px solid #5b37851b;
+}
+.grid-item .card .card_description{
+    margin-top: .5em;
+    font-style: italic;
+}
+.card_description q{
+    font-size: larger;
+}
+
 /*----------- MEDIA MD------------------- */
 
 @media screen and (min-width:768px) {
@@ -365,6 +424,7 @@ body::before{
      }
      .marketing-section .content{
         width: 60%;
+        margin-right: 20px;
      }
      .marketing-section .content-title{
          text-align: right;
@@ -376,11 +436,26 @@ body::before{
      .marketing-section .section-lg-p2{
          padding: 40px;
      }
-     .marketing-section .showcase-img img{
-        width: 500px;
-     }
+
      .marketing-section .showcase-img img{
         width: 400px;
+    }
+
+    /* testimonial */
+    .testimonial .grid-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .grid-item{
+        padding: 20px;
+        border: 0;
+    }
+    .grid-item .card{
+        border-radius: 8px;
+        box-shadow: .2em .2em 1em rgba(49, 47, 47, 0.3);
+    }
+
+    .testimonial >h2{
+        font-size: 4rem;
     }
     
 
