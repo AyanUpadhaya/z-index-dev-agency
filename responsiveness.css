@@ -111,8 +111,8 @@
     .section-flex-reverse{
         flex-direction: row-reverse;
     }
-    .section-gap-20{
-        gap: 20px;
+    .section-gap-10{
+        gap: 10px;
     }
     /* react section */
     .react-section .w-lg-100{
@@ -141,6 +141,7 @@
      }
      .marketing-section .content{
         width: 60%;
+        margin-right: 20px;
      }
      .marketing-section .content-title{
          text-align: right;
@@ -152,12 +153,33 @@
      .marketing-section .section-lg-p2{
          padding: 40px;
      }
+
      .marketing-section .showcase-img img{
         width: 500px;
-     }
-     .marketing-section .showcase-img img{
-        width: 400px;
     }
+
+    /* testimonial */
+    .testimonial .grid-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .grid-item{
+        padding: 20px;
+        border: 0;
+    }
+    .grid-item .card{
+        border-radius: 8px;
+        box-shadow: .2em .2em 1em rgba(49, 47, 47, 0.3);
+    }
+
+    .testimonial >h2{
+        font-size: 4rem;
+    }
+
+    /* footer */
+    .footer .grid-container{
+        grid-template-columns: repeat(4,1fr);
+    }
+
     
 
 }
