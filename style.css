@@ -394,8 +394,8 @@ body::before{
     .section-flex-reverse{
         flex-direction: row-reverse;
     }
-    .section-gap-20{
-        gap: 20px;
+    .section-gap-10{
+        gap: 10px;
     }
     /* react section */
     .react-section .w-lg-100{
@@ -438,7 +438,7 @@ body::before{
      }
 
      .marketing-section .showcase-img img{
-        width: 400px;
+        width: 500px;
     }
 
     /* testimonial */
