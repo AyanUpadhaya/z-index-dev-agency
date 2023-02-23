@@ -289,9 +289,9 @@ body::before{
 .footer .grid-container{
     display: grid;
     grid-template-columns: 1fr;
-    gap:1.5rem;
+    grid-row-gap:1rem;
 }
-.footer .grid-item{
+.footer .grid-container .grid-item{
     border: 0;
 }
 .footer .footer-list{
@@ -307,16 +307,15 @@ body::before{
 }
 
 /* footer subscribe */
-.footer .news-letter{
+.footer .grid-item .news-letter{
     width: 100%;
     display: flex;
 }
 .footer .news-letter input{
-    padding: 10px;
-    border:.5px solid #fbbf24;
+    padding: 7px;
 }
 .footer .news-letter .subscribe{
-    padding: 0 20px;
+    padding: 0px 20px;
     background-color: #fbbf24;
     border: 0;
     cursor: pointer;
